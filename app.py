@@ -47,7 +47,7 @@ def add_to_airtable():
 def css(filename):
     with open(filename) as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-css(r"C:\Users\User\Desktop\buywbit\style\style.css")
+css(r"style\style.css")
 #endregion
 
 #region --- SESSION MANAGERS --- 
@@ -111,7 +111,7 @@ def get_url(url):
 def load_assets():
     lottie_code = get_url('https://assets7.lottiefiles.com/packages/lf20_l5qvxwtf.json')
     lottie_load = get_url('https://assets4.lottiefiles.com/packages/lf20_8PpfJUolaj.json')
-    img_1 = Image.open(r"C:\Users\User\Desktop\buywbit\images\FocusPal-1.png")
+    img_1 = Image.open(r"images\FocusPal-1.png")
     header_logo = Image.open(r"images\headerlogo.png")
     return lottie_code,lottie_load,img_1,header_logo
 
