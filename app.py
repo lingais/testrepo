@@ -47,7 +47,7 @@ def add_to_airtable():
 def css(filename):
     with open(filename) as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-css(r"style\style.css")
+css(r"style.css")
 #endregion
 
 #region --- SESSION MANAGERS --- 
